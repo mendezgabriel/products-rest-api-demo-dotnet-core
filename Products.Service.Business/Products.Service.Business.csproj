@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Products.Service.Domain\Products.Service.Domain.csproj" />
+    <ProjectReference Include="..\Products.Service.Interfaces.Business\Products.Service.Interfaces.Business.csproj" />
+    <ProjectReference Include="..\Products.Service.Interfaces.Repository\Products.Service.Interfaces.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

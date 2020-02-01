@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Serilog" Version="2.8.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.Trace" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Products.Service.Business\Products.Service.Business.csproj" />
+    <ProjectReference Include="..\Products.Service.Domain\Products.Service.Domain.csproj" />
+    <ProjectReference Include="..\Products.Service.Interfaces.Business\Products.Service.Interfaces.Business.csproj" />
+    <ProjectReference Include="..\Products.Service.Interfaces.Repository\Products.Service.Interfaces.Repository.csproj" />
+    <ProjectReference Include="..\Products.Service.Repositories\Products.Service.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
