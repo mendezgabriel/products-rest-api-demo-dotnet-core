@@ -3,12 +3,12 @@
 ## Description:
 A RESTful API demo project developed with .Net Core following SOLID principles and best practices.
 
-Developed on Dec 2019 using VS2017 by Gabriel Mendez (Github user [mendezgabriel](https://github.com/mendezgabriel)) as a RESTFul API using .Net Core 2.1. The API is a demo that could be used in a e-commerce or shopping cart-like application and its goal is to manage products and product options using [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations. This API must be consumed with any HTTP client such as a Web application, mobile app, another service, a console app, etc. 
-
-It uses decoupling of dependecies via interfaces and their implementations as stated by the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles and the architecture pattern known as the [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/)
+Developed on Dec 2019 using VS2017 by Gabriel Mendez (Github user [mendezgabriel](https://github.com/mendezgabriel)) as a RESTFul API using .Net Core 2.1. 
 
 ## Overview:
+The API is a demo that could be used in a e-commerce or shopping cart-like application and its goal is to manage products and product options using [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations. This API must be consumed with any HTTP client such as a Web application, mobile app, another service, a console app, etc. 
 
+It uses decoupling of dependecies via interfaces and their implementations as stated by the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles and the architecture pattern known as the [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/)
 
 ## Details:
 - It uses dependency injection to resolve all dependencies.
@@ -22,7 +22,6 @@ It uses decoupling of dependecies via interfaces and their implementations as st
 The following endpoints are included:
 
 ### Products
-
 * `GET /products` - Gets all products.
 * `GET /products?name={name}` - Finds all products matching the specified name.
 * `GET /products/{id}` - Gets the project that matches the specified ID - ID is a GUID.
@@ -31,7 +30,6 @@ The following endpoints are included:
 * `DELETE /products/{id}` - Deletes a product and its options.
 
 ### Product Options
-
 * `GET /products/{id}/options` - Finds all options for a specified product.
 * `GET /products/{id}/options/{optionId}` - Finds the specified product option for the specified product.
 * `POST /products/{id}/options` - Adds a new product option to the specified product.
